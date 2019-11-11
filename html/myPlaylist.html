@@ -1,0 +1,39 @@
+<div class="row">
+    <h2 id="playlist-header" class="col-xs-12">My Playlist</h2>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <label id="labelSearch">Search Title: </label>
+        <input type="text" autofocus ng-model="textToSearch.title" />
+        <button type="button" class="btn btn-default playlistAddSongBtn"><a href="#!/addSong">Add song</a></button>
+    </div>
+</div>
+
+
+<div class="row playlistDiv">
+    <table border="1" id="tablePlaylist" class="col-xs-12 col-md-7">
+        <tr>
+            <th>Song Title</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Link</th>
+            <th>Edit</th>
+        </tr>
+        <tr ng-repeat="song in (filteredPlaylist =( playlist|filter:textToSearch)) ">
+            <td>{{song.title}}</td>
+            <td>{{song.category}}</td>
+            <td>{{song.description}}</td>
+            <td id="tdLink">{{song.link}}</td>
+            <td>
+                <input type="button" class="{{song._id}}" ng-click="songOption($event)" value="Edit" />
+                <input type="button" class="{{song._id}}" ng-click="songOption($event)" value="Play" />
+                <input type="button" class="{{song._id}}" ng-click="songOption($event)" value="Delete" />
+            </td>
+
+        </tr>
+    </table>
+    <div class="col-xs-12 col-md-5">
+        <iframe src="{{playLink}}" frameborder="0"></iframe>
+    </div>
+
+</div>

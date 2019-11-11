@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appModule">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyTracks</title>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Main angular cdn file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <!--Angular routes cdn file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--javascript source files-->
+    <script src="js/appModule.js"></script>
+    <script src="js/homeModule.js"></script>
+    <script src="js/registerModule.js"></script>
+    <script src="js/loginModule.js"></script>
+    <script src="js/myPlaylistModule.js"></script>
+    <script src="js/addSongModule.js"></script>
+    <script src="js/editSongModule.js"></script>
+    <script src="js/logoutModule.js"></script>
+
+    <!--CSS Files-->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/playlist.css">
+
+</head>
+
+<body>
+
+    <span></span>
+    <div class="container-fluid">
+        <!--navbar area-->
+        <section class="row nav-row">
+            <div class="col-xs-12" id="navDiv">
+                <!--full nav bar-->
+                <nav class="navbar navbar-default static-top">
+                    <!--navigation when collapsed-->
+                    <div class="navbar-header">
+
+                        <button id="nav-collapse" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--Site Name-->
+                        <a href="#!/home" class="navbar-brand" id="siteName"> <img src="assets/images/favicon.png" width="50" />MyTracks</a>
+                    </div>
+                    <!--navbar menu-->
+                    <div id="menu" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#!/login" class="linkHome">Login</a>
+                            </li>
+                            <li>
+                                <a href="#!/register" class="linkHome">Register</a>
+                            </li>
+                            <li>
+                                <a href="#!/myPlaylist" class="linkBody"> <span id="usernameSpan"></span></a>
+                            </li>
+                            <li>
+                                <a href="#!/logout" class="linkBody">Log Out</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+
+        <!--Content Area-->
+        <section ng-view>
+
+        </section>
+
+        <!--footer area-->
+        <section class="row">
+            <footer>
+                <div class="col-xs-6 pull-left">
+                    <img width="60" src="assets/images/favicon.png" />
+                    <span id="footerLogo">MyTracks</span>
+                </div>
+                <div class="col-xs-6 pull-right" id="footer-link">
+                    <p>
+                        <a href="https://www.facebook.com/"><img src="../assets/images/facebook.png" class="glyph-footer" /> </a>
+                        <a href="https://www.twitter.com/"><img src="../assets/images/twitter.png" class="glyph-footer" /> </a>
+                        <a href="https://www.google.com/"><img src="../assets/images/plus.png" class="glyph-footer" /> </a>
+                        <a href="https://www.linkedin.com/"><img src="../assets/images/linkedin.png" class="glyph-footer" /></a>
+                    </p>
+                </div>
+            </footer>
+        </section>
+
+    </div>
+</body>
+
+</html>

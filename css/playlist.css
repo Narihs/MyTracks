@@ -1,0 +1,80 @@
+#playlist-header {
+    font-family: 'Knewave';
+}
+
+.playlistBtn,
+.playlistAddSongBtn > a,
+#labelSearch {
+    font-family: 'Patrick';
+    font-size: 20px;
+}
+
+iframe {
+    width: 550px;
+    height: 400px;
+}
+
+.playlistDiv {
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+#tablePlaylist {
+    font-family: "PATRICK";
+    font-size: 17px;
+}
+
+.playlistBtn {
+    width: 100px;
+}
+
+#tablePlaylist th,
+#tablePlaylist td {
+    padding-left: 2px;
+}
+
+#logoutHeader {
+    font-family: 'PermanentMarker';
+    text-align: center;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.logoutBtn {
+    text-align: center;
+    font-family: 'Patrick';
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media (max-width: 1460px) {
+    #tablePlaylist {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1176px) {
+    .playlistAddSongBtn > a,
+    #labelSearch {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1136px) {
+    #tablePlaylist {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 590px) {
+    #tablePlaylist {
+        max-width: 600px;
+    }
+    iframe {
+        max-width: 350px;
+    }
+    #tdLink {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+}

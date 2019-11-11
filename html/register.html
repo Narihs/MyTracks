@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="formHeader col-xs-12">
+        <h2>Sign Up</h2>
+        <p> <span>Join MyTracks community, make your own playlist.</span>
+            <br/> Already have an account? <a href="#!/login" id="login-trigger">Log In</a></p>
+    </div>
+</div>
+<div class="row">
+    <div class="formDiv col-xs-12">
+        <form id="regForm " novalidate>
+            <div class="form-group ">
+                <div class="input-group ">
+                    <span class="input-group-addon " id="addon1 "> <i class="glyphicon glyphicon-envelope "></i></span>
+                    <input type="email " class="form-control " placeholder="*Email " aria-describedby="addon1 " ng-model="regEmail " required/>
+                </div>
+                <span ng-model="emailMessage " class="errorMessage " ng-style="emailColor ">{{emailMessage}}</span>
+            </div>
+
+            <div class="form-group has-feedback ">
+                <div class="input-group ">
+                    <span class="input-group-addon " id="addon2 "> <i class="glyphicon glyphicon-user "></i></span>
+                    <input type="text " ng-model="regUsername " class="form-control " placeholder="*Username " aria-describedby="addon2 " required/>
+                </div>
+                <span ng-model="usernameMessage " class="errorMessage " ng-style="usernameColor ">{{usernameMessage}}</span>
+            </div>
+            <div class="form-group has-feedback ">
+                <div class=" input-group ">
+                    <span class="input-group-addon " id="addon3 "> <i class="glyphicon glyphicon-lock "></i></span>
+                    <input type="password" ng-model="regPassword" class="form-control" placeholder="*Password " aria-describedby="addon3 " requires/>
+                </div>
+                <span ng-model="passwordMessage" class="errorMessage " ng-style="passwordColor ">{{passwordMessage}}</span>
+            </div>
+            <div>
+                <button type="button " class="btn btn-default btnHome " ng-click="validateForm() ">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+</div>

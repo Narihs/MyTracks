@@ -1,0 +1,27 @@
+<section class="loginView row">
+    <div class="col-xs-12">
+        <div class="formHeader">
+            <h2>Welcome Back</h2>
+            <p> <span>Your playlists are waiting for you to fill them up ;) </span>
+                <br/> Don't have an account? <a id="signup-trigger" href="#!/register">Sign Up</a></p>
+        </div>
+        <div class="formDiv">
+            <form>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addon5"> <i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Email" aria-describedby="addon5" ng-model="loginEmail" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="addon6"> <i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Password" aria-describedby="addon3" ng-model="loginPassword" required/>
+                    </div>
+                    <span ng-model="loginMessage " class="errorMessage">{{loginMessage}}</span>
+                </div>
+            </form>
+            <button type="button" class="btn btn-default btnHome" ng-click="checkLogIn()">Log In</button>
+        </div>
+    </div>
+</section>

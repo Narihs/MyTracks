@@ -1,0 +1,253 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: 'Knewave';
+    src: url("/assets/fonts/Knewave-Regular.ttf")format('truetype');
+}
+
+@font-face {
+    font-family: 'Grace';
+    src: url("/assets/fonts/CoveredByYourGrace.ttf")format('truetype');
+}
+
+@font-face {
+    font-family: 'Patrick';
+    src: url("/assets/fonts/PatrickHand-Regular.ttf")format('truetype');
+}
+
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url("/assets/fonts/PermanentMarker.ttf")format('truetype');
+}
+
+body {
+    min-width: 300px;
+    margin-bottom: 60px;
+    background-image: url("/assets/images/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signUpHome {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: PermanentMarker;
+    text-align: center;
+    background-color: white;
+    font-size: 30px;
+}
+
+.signUpHome > .btn-default {
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.linkBody {
+    visibility: hidden;
+}
+
+#navDiv {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    padding-right: 20px;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    padding: 0px 5px;
+    width: 200px;
+    line-height: 20px;
+    font-family: Knewave, cursive;
+    font-size: 20px;
+}
+
+.navbar-brand >img {
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #179ff6;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #179ff6;
+}
+
+footer {
+    padding-top: 10px;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+#footerLogo {
+    font-family: Knewave, cursive;
+    font-size: 30px;
+}
+
+.div-header {
+    background-color: white;
+    background-image: url("/assets/images/header.png");
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: round;
+    height: 650px;
+    font-family: PermanentMarker;
+}
+
+.div-header> p {
+    font-size: 65px;
+    line-height: 650px;
+    text-align: center;
+}
+
+.homeContent {
+    margin-top: 60px;
+    height: 500px;
+    text-align: left;
+}
+
+#homeImg {
+    max-width: 650px;
+    opacity: 0.8;
+}
+
+.h2Home {
+    font-size: 40px;
+    font-family: PermanentMarker;
+    color: white;
+}
+
+.pHome {
+    font-size: 30px;
+    font-family: Patrick;
+}
+
+.btnLink:focus,
+.btnLink:active {
+    outline: none !important;
+}
+
+.glyph-footer {
+    text-align: right;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.loginView {
+    margin-top: 50px;
+}
+
+@media (max-width: 1280px) {
+    .div-header> p {
+        font-size: 55px;
+    }
+    .h2Home {
+        font-size: 35px;
+    }
+    .pHome {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1112px) {
+    .div-header {
+        height: 450px;
+    }
+    .div-header> p {
+        font-size: 40px;
+        line-height: 450px;
+    }
+    .h2Home {
+        font-size: 30px;
+    }
+    .pHome {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .homeContent {
+        height: 750px;
+    }
+}
+
+@media (max-width: 805px) {
+    .div-header> p {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 775px) {
+    .div-header {
+        height: 300px;
+    }
+    .div-header> p {
+        font-size: 20px;
+        line-height: 300px;
+    }
+}
+
+@media (max-width: 713px) {
+    .div-header> p {
+        font-size: 30px;
+    }
+    #homeImg {
+        max-width: 550px;
+    }
+    .homeContent {
+        height: 650px;
+    }
+}
+
+@media (max-width: 615px) {
+    .div-header> p {
+        font-size: 25px;
+    }
+    #homeImg {
+        max-width: 450px;
+    }
+    .homeContent {
+        height: 600px;
+    }
+    .h2Home {
+        font-size: 25px;
+    }
+    .pHome {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 525px) {
+    .div-header {
+        height: 200px;
+    }
+    .div-header> p {
+        font-size: 17.5px;
+        line-height: 200px;
+    }
+    #homeImg {
+        max-width: 300px;
+    }
+    .homeContent {
+        height: 550px;
+    }
+    #footerLogo {
+        font-size: 20px;
+    }
+    .glyph-footer {
+        width: 28px;
+        height: 28px;
+    }
+}

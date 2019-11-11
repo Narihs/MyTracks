@@ -1,0 +1,26 @@
+<div class="row formHeader">
+    <h2 class="col-xs-12">Add Song</h2>
+</div>
+
+<div class="formDiv row">
+    <form id="addSongForm" class="col-xs-12" novalidate>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="*Title" ng-model="addSongTitle" required/>
+            <span ng-model="titleMessage " class="errorMessage">{{titleMessage}}</span>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="*Category" ng-model="addSongCategory" required />
+            <span ng-model="categoryMessage " class="errorMessage">{{categoryMessage}}</span>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Description" ng-model="addSongDes" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="*Link" ng-model="addSongLink" required/>
+            <span ng-model="linkMessage " class="errorMessage">{{linkMessage}}</span>
+        </div>
+        <div>
+            <input type="button" class="btn btn-default playlistBtn" ng-click="addSong()" value="Add Song" />
+        </div>
+    </form>
+</div>

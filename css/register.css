@@ -1,0 +1,54 @@
+.formHeader {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.formHeader>h2 {
+    font-family: PermanentMarker;
+    font-size: 50px;
+}
+
+.formHeader>p,
+.formHeader>p>span {
+    font-family: patrick;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.formDiv {
+    text-align: center;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.btnHome {
+    font-family: PermanentMarker;
+}
+
+.form-control,
+.input-group-addon {
+    border-radius: 15px;
+}
+
+@media (min-width: 650px) {
+    .form-group {
+        margin: auto;
+        max-width: 600px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .formHeader>h2 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+.errorMessage {
+    color: red;
+    text-align: left;
+}

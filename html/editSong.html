@@ -1,0 +1,25 @@
+<div class="formHeader row">
+    <h2 class="col-xs-12">Edit Song</h2>
+</div>
+<div class="formDiv row">
+    <form id="editSongForm" class="col-xs-12">
+        <div class=" form-group ">
+            <input type="text " class="form-control " placeholder="*Title " ng-model="songTitle " required/>
+            <span ng-model="titleMessage " class="errorMessage ">{{titleMessage}}</span>
+        </div>
+        <div class="form-group ">
+            <input type="text " class="form-control " placeholder="*Category " ng-model="songCategory " required />
+            <span ng-model="categoryMessage " class="errorMessage ">{{categoryMessage}}</span>
+        </div>
+        <div class="form-group ">
+            <input type="text " class="form-control " placeholder="Description " ng-model="songDes " />
+        </div>
+        <div class="form-group ">
+            <input type="text " class="form-control " placeholder="*Link " ng-model="songLink " required/>
+            <span ng-model="linkMessage " class="errorMessage ">{{linkMessage}}</span>
+        </div>
+        <div>
+            <input type="button " class="btn btn-default playlistBtn " ng-click="saveEdit() " value="Save Song " />
+        </div>
+    </form>
+</div>
